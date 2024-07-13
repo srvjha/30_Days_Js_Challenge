@@ -1,6 +1,6 @@
 # Day 1 Variable and Data Types
 ## Purpose
-This is the first day of the 100 days of code challenge. The purpose of this day is
+This is the first day of the 30 days of Js code challenge. The purpose of this day is
 to learn about variables and data types. Variables are used to store data in a program.
 Data types are used to specify the type of data that is stored in a variable. This
 day will cover the following topics:
