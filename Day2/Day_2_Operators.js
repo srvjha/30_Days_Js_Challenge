@@ -133,5 +133,7 @@ function Ternary(num){
 }
 Ternary(5);
 
+// Day 2 Challenge Completed.
+
 
 
