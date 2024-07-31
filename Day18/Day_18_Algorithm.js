@@ -163,13 +163,143 @@ function longestSubstring(s){
     return maxLength;
 }
  console.log(
-    `Length of the longest substring without repeating characters in '${mystr}': ${longestSubstring}`
+    `Length of the longest substring without repeating characters in '${mystr}': ${longestSubstring(mystr)}`
  ); 
 
  // Activity 4: Array Algorithm
 
  console.log("Array Algorithm.");
  // Task 8:
- let arr = [1, 2, 3, 4, 5, 6]
+ let arr = [1, 2, 3, 4, 5, 6];
+ console.log(`Original Array: [${arr}]`)
  let k = 4;
- 
+ console.log("K: ",k)
+
+function reverse(nums,start,end){
+    while(start<end){
+        [nums[start],nums[end]] = [nums[end],nums[start]];
+        start++;
+        end--;
+    }
+}
+function rotateByK(nums, k) {
+  let n = nums.length;
+  k = k%n;
+   nums.reverse();
+   reverse(nums,0,k-1);
+   reverse(nums,k,nums.length-1);
+
+   return nums;
+};
+
+console.log(
+    `Rotated array: ${JSON.stringify(rotateByK(arr, k))}`
+)
+
+// Task 9:
+
+let sorted1 = [5,6,7,8];
+let sorted2 = [1,2,3,4];
+console.log(`Sorted1: ${sorted1} and Sorted2:${sorted2}`)
+
+function merge(sorted1,sorted2){
+    let result = [];
+    let i = 0;
+    let j = 0;
+    while(i<sorted1.length && j<sorted2.length){
+        if(sorted1[i]<sorted2[j]){
+            result.push(sorted1[i]);
+            i++;
+        }else{
+            result.push(sorted2[j]);
+            j++;
+        }
+    }
+    while(i<sorted1.length){
+        result.push(sorted1[i]);
+        i++;
+    }
+    while(j<sorted2.length){
+        result.push(sorted2[j]);
+        j++;
+    }
+    return result;
+}
+
+console.log(
+    `Merged array: [${(merge(sorted1, sorted2))}]`
+)
+
+
+// Activity 5: Dynamic Programming.
+console.log("Dynamic Programming.")
+
+// Task 10:
+
+function fibMemo(n,memo={}){
+    if(n in memo){
+      console.log("MEMO CAllED: ",memo[n])
+      return memo[n]
+    }
+        
+   if(n <=1) return n
+
+   memo[n] = fibMemo(n-1,memo) + fibMemo(n-2,memo)
+   console.log("MEMO: ",memo[n])
+
+   return memo[n]
+}
+let n=10;
+
+console.log(
+    `Fibonacci number at position ${n}:  ${fibMemo(10)}`
+)
+
+// Task 11:
+
+function knapsack(values,weights,W){
+    const n = values.length;
+
+    // Memoization table jo store karega results of subproblems
+    const memo = Array.from({length:n},()=>Array(W+1).fill(-1))
+
+    function knapsackRec(index,remainingWeight){
+
+        //! Base Case: if no item left or remaining weight is 0 then return 0
+        if(index<0 || remainingWeight === 0){
+            return 0;
+        }
+
+        // if subProblem already solved then return the stored result
+        if(memo[index][remainingWeight]!==-1){
+            return memo[index][remainingWeight];
+        }
+
+        // Case 1: Not to include the current item
+        let result = knapsackRec(index-1,remainingWeight);
+
+        // Case 2: Include the current item
+        if(weights[index] <= remainingWeight){
+            result = Math.max(
+                result,values[index] + knapsackRec(index-1,remainingWeight-weights[index])
+            );
+        }
+
+        // Storing the result in memo table
+        memo[index][remainingWeight] = result;
+
+        return result;
+    }
+
+    return knapsackRec(n-1,W)
+}
+
+const values = [75,120,140];
+const weights = [20,30,40];
+const W = 60;
+
+console.log(
+    `Maximum value [${values}] and weights [${weights}] that can be put in a knapsack of capacity ${W}:  ${
+    knapsack(values,weights,W)
+    }`
+)
