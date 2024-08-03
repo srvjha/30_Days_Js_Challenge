@@ -92,6 +92,7 @@ console.log(`Input: x = ${1234567890}`);
 console.log(`Output: ${isPalindrome(1234567890)}`);
 
 // Activity 4: Merge Two Sorted Lists
+console.log("\nMerge Two Sorted Lists")
 
 class ListNode {
     constructor(val = 0, next=null) {
@@ -127,4 +128,44 @@ function display(li){
     }
 }
 let dli = mergeTwoLists(l1,l2)
-display(dli)
+display(dli);
+
+console.log("Test Case: 1");
+console.log(`Input: l1 = [1,2,8], l2 = [1]`);
+console.log(`Output: ${display(mergeTwoLists(l1,l2))}`);
+
+console.log("Test Case: 2");
+console.log(`Input: l1 = [1,2,8], l2 = [1]`);
+console.log(`Output: ${display(mergeTwoLists(l1,l2))}`);
+
+// Activity 5: Valid Parentheses
+console.log("\nValid Parentheses");
+
+function balancePara(array,startIndex=0,count=0)
+{
+    if(startIndex===array.length) return count===0
+    if(count<0) return false
+
+    if(array[startIndex] =="("||array[startIndex] =="["||array[startIndex] =="{"||array[startIndex] =="<")
+        {
+            balancePara(array,startIndex+1,count+1)
+        }
+    else if(array[startIndex]===")"||array[startIndex] =="]"||array[startIndex] =="}"||array[startIndex] ==">")
+        {
+            balancePara(array,startIndex+1,count-1)
+        }
+    else return false
+}
+var isValid = function(s) {
+    let array = s.split("")
+    console.log("Array: ",array)
+    return balancePara(array)
+};
+
+console.log("Test Case: 1");
+console.log(`Input: s = "()"`);
+console.log(`Output: ${isValid("()")}`);
+
+console.log("Test Case: 2");
+console.log(`Input: s = "()[]{}"`)
+console.log(`Output: ${isValid("()[]{}")}`);
