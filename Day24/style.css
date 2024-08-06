@@ -1,0 +1,143 @@
+body{
+   
+    background-image: url("./images/bg.png");
+    background-size: cover;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the rgba value to change the opacity */
+    z-index: 1;
+}
+
+
+.header{    
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 4px 3px black;
+
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+#city{
+    width: 100%;
+    height: 40px;
+    padding: 2px;
+}
+
+#city{
+    font-size: 20px;   
+    height: 25px;
+    width: 400px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black
+}
+
+
+::placeholder{
+    color:black;
+    opacity: 0.7;
+}
+
+
+
+
+#search-icon{
+    height: 25px;
+    width: 25px;
+    margin-left: -26px;
+    cursor: pointer;
+}
+
+.temp{
+    margin-top: 60px;
+    margin-left:20px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px rgb(9, 9, 42);
+}
+
+.main{
+    margin-left:20px;
+    
+}
+
+.forecast{
+    font-size: 30px;
+    width: 300px;
+    color: whitesmoke;
+    text-shadow: 4px 1px rgb(0, 0, 20);
+}
+
+.weather-info {
+    margin-left: 1100px;
+    margin-top: -200px;
+    background-color: rgba(221, 225, 224, 0.7);
+    padding: 30px;
+    border: 2px solid transparent;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    font-weight:500;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column; /* Change to column for vertical spacing */
+    gap: 10px; /* Increase space between items */
+    box-shadow: 0px 4px 8px rgba(11, 10, 10, 0.1);
+    max-width: 250px; /* Adjust width to fit content */
+}
+
+.time{
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+.weather-info div {
+    flex: 1;
+}
+
+.weather-info hr{
+    border:1px solid rgb(132, 131, 131)
+}
+
+.toggle {
+    display: none;
+}
+
+.future-info{
+    margin-top: -110px;
+    
+}
+
+.box{
+    background-color: rgb(219, 217, 217);
+    margin-left: 10px;
+    width:220px;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+    
+}
