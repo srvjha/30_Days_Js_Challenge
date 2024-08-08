@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+#login, #chat {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+#login input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-right: 10px;
+    
+    background-color:transparent;
+    
+}
+
+#login button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #010c19;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+#login button:hover {
+    background-color: #0056b3;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#messages {
+    flex: 1;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.myMessage {
+    background-color: rgb(2, 86, 2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    color: #fcf7f7;
+    text-align: right;
+    width: 230px;
+    margin-left: 230px;
+    border-radius: 11px;
+}
+
+.otherMessage {
+    background-color: #2b2929;
+    color: white;
+    border-radius: 11px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    width: 230px;
+}
+
+.serverMessage {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+#inputArea {
+    display: flex;
+    align-items: center;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #010c19;
+    color: white;
+
+}
+
+#inputArea button {
+   background-color: transparent;
+   border: none;
+}
+
+#inputArea button img {
+    height: 32px;
+   width: 32px;
+}
+
+#inputArea button:hover {
+    background-color: #bad0e8;
+}

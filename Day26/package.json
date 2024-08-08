@@ -1,0 +1,20 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "RealTime Chat Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server js"
+  },
+  "keywords": [
+    "chatApp",
+    "websocket"
+  ],
+  "author": "Saurav Jha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}
