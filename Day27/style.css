@@ -15,10 +15,10 @@ body{
 .taskContainer{
     position:absolute;
     height:630px;
-    width:790px;
+    width:630px;
     background-color: white;
     margin-top: -600px;
-    margin-left: 380px;
+    margin-left: 430px;
     border-radius: 14px;
     box-shadow: 2px 2px 2px 3px rgb(137, 136, 136);
     padding-top: 1px;
@@ -77,7 +77,7 @@ body{
 
 #submit{
     margin-top: 24px;
-    margin-left: 270px;
+    margin-left: 220px;
     padding: 5px;
     width:100px;
     height: 40px;
@@ -166,10 +166,12 @@ input[type="checkbox"] {
     height:1.5rem;
   }
 
-.main{
+.main1{
     text-align: center;
     font-size: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-bottom: -30px;
 
 }
   
