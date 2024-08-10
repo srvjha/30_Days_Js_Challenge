@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Samsung Galaxy S23",
+        "price": 799,
+        "description": "Flagship smartphone with a 6.1-inch Dynamic AMOLED display, triple camera setup, and 5G connectivity.",
+        "image_url": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911blibins/gallery/in-galaxy-s23-s911-446648-sm-s911blibins-536009999?$650_519_PNG$"
+    },
+    {
+        "name": "Apple iPhone 14",
+        "price": 999,
+        "description": "The latest iPhone with a 6.1-inch Super Retina XDR display, A16 Bionic chip, and dual-camera system.",
+        "image_url": "https://media.croma.com/image/upload/v1708672728/Croma%20Assets/Communication/Mobiles/Images/261934_0_kukyat.png"
+    },
+    {
+        "name": "Google Pixel 7",
+        "price": 699,
+        "description": "Google's flagship phone with a 6.3-inch OLED display, Tensor G2 chip, and advanced camera features.",
+        "image_url": "https://lh3.googleusercontent.com/rA_6rl-fDBDzIF79PPLRRCH31lyyyRAOE4cRdMG50IbyGbvHLVgAMJPtkFYRNEIDiHPvzruvdGMI8Xio1sojwFoXBSiwgQlRg7j3"
+    },
+    {
+        "name": "OnePlus 11",
+        "price": 749,
+        "description": "High-performance smartphone with a 6.7-inch Fluid AMOLED display, Snapdragon 8 Gen 2 processor, and 50MP main camera.",
+        "image_url": "https://oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/black-img.png"
+    },
+    {
+        "name": "Xiaomi Mi 13",
+        "price": 649,
+        "description": "Affordable flagship with a 6.36-inch AMOLED display, Snapdragon 8 Gen 2 processor, and 50MP triple-camera system.",
+        "image_url": "https://i02.appmifile.com/56_item_my/02/04/2024/b2b7c6f76d8a5b6a24f5557c9afc3f40.png"
+    },
+    {
+        "name": "Oppo Find X5 Pro",
+        "price": 899,
+        "description": "Premium smartphone with a 6.7-inch AMOLED display, Snapdragon 8 Gen 1 processor, and 50MP triple-camera system.",
+        "image_url": "https://mobilepricea.com/wp-content/uploads/2024/02/oppo_find_x5_pro-1024x1024.png.webp"
+    },
+    {
+        "name": "Sony Xperia 1 IV",
+        "price": 1199,
+        "description": "Professional-grade smartphone with a 6.5-inch 4K OLED display, Snapdragon 8 Gen 1 processor, and advanced camera system.",
+        "image_url": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911blibins/gallery/in-galaxy-s23-s911-446648-sm-s911blibins-536009999?$650_519_PNG$"
+    },
+    {
+        "name": "Realme GT Neo 3",
+        "price": 499,
+        "description": "Mid-range smartphone with a 6.7-inch AMOLED display, MediaTek Dimensity 8100 processor, and 50MP triple-camera system.",
+        "image_url": "https://media.croma.com/image/upload/v1662434681/Croma%20Assets/Communication/Mobiles/Images/252971_11_bglu6r.png"
+    },
+    {
+        "name": "Motorola Edge 40 Pro",
+        "price": 799,
+        "description": "Flagship smartphone with a 6.7-inch OLED display, Snapdragon 8 Gen 2 processor, and 50MP triple-camera system.",
+        "image_url": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911blibins/gallery/in-galaxy-s23-s911-446648-sm-s911blibins-536009999?$650_519_PNG$"
+    },
+    {
+        "name": "Vivo X80 Pro",
+        "price": 899,
+        "description": "High-end smartphone with a 6.78-inch AMOLED display, Snapdragon 8 Gen 1 processor, and 50MP quad-camera system.",
+        "image_url": "https://media.croma.com/image/upload/v1662434681/Croma%20Assets/Communication/Mobiles/Images/252971_11_bglu6r.png"
+    },
+    {
+        "name": "Huawei P50 Pro",
+        "price": 999,
+        "description": "Flagship smartphone with a 6.6-inch OLED display, Kirin 9000 processor, and 50MP quad-camera system.",
+        "image_url": "https://oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/black-img.png"
+    },
+    {
+        "name": "Asus ROG Phone 7",
+        "price": 1099,
+        "description": "Gaming smartphone with a 6.78-inch AMOLED display, Snapdragon 8 Gen 2 processor, and 6000mAh battery.",
+        "image_url": "https://i02.appmifile.com/56_item_my/02/04/2024/b2b7c6f76d8a5b6a24f5557c9afc3f40.png"
+    },
+    {
+        "name": "Nokia X30 5G",
+        "price": 399,
+        "description": "Affordable 5G smartphone with a 6.43-inch AMOLED display, Snapdragon 695 processor, and 50MP dual-camera system.",
+        "image_url": "https://i02.appmifile.com/56_item_my/02/04/2024/b2b7c6f76d8a5b6a24f5557c9afc3f40.png"
+    },
+    {
+        "name": "Honor Magic4 Pro",
+        "price": 899,
+        "description": "Premium smartphone with a 6.81-inch OLED display, Snapdragon 8 Gen 1 processor, and 50MP quad-camera system.",
+        "image_url": "https://mobilepricea.com/wp-content/uploads/2024/02/oppo_find_x5_pro-1024x1024.png.webp"
+    },
+    {
+        "name": "ZTE Axon 40 Ultra",
+        "price": 849,
+        "description": "High-end smartphone with a 6.8-inch AMOLED display, Snapdragon 8 Gen 1 processor, and 64MP triple-camera system.",
+        "image_url": "https://media.croma.com/image/upload/v1708672728/Croma%20Assets/Communication/Mobiles/Images/261934_0_kukyat.png"
+    },
+    {
+        "name": "TCL 20 Pro 5G",
+        "price": 499,
+        "description": "Mid-range smartphone with a 6.67-inch AMOLED display, Snapdragon 750G processor, and 48MP quad-camera system.",
+        "image_url": "https://lh3.googleusercontent.com/rA_6rl-fDBDzIF79PPLRRCH31lyyyRAOE4cRdMG50IbyGbvHLVgAMJPtkFYRNEIDiHPvzruvdGMI8Xio1sojwFoXBSiwgQlRg7j3"
+    },
+    {
+        "name": "Lenovo Legion Phone Duel 2",
+        "price": 899,
+        "description": "Gaming smartphone with a 6.92-inch AMOLED display, Snapdragon 888 processor, and 5500mAh battery.",
+        "image_url": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911blibins/gallery/in-galaxy-s23-s911-446648-sm-s911blibins-536009999?$650_519_PNG$"
+    },
+    {
+        "name": "Infinix Zero Ultra",
+        "price": 599,
+        "description": "Affordable flagship with a 6.8-inch AMOLED display, MediaTek Dimensity 1200 processor, and 108MP triple-camera system.",
+        "image_url": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911blibins/gallery/in-galaxy-s23-s911-446648-sm-s911blibins-536009999?$650_519_PNG$"
+    },
+    {
+        "name": "Meizu 18 Pro",
+        "price": 699,
+        "description": "Flagship smartphone with a 6.7-inch AMOLED display, Snapdragon 888 processor, and 50MP quad-camera system.",
+        "image_url": "https://lh3.googleusercontent.com/rA_6rl-fDBDzIF79PPLRRCH31lyyyRAOE4cRdMG50IbyGbvHLVgAMJPtkFYRNEIDiHPvzruvdGMI8Xio1sojwFoXBSiwgQlRg7j3"
+    },
+    {
+        "name": "Vivo V23 Pro",
+        "price": 549,
+        "description": "Mid-range smartphone with a 6.56-inch AMOLED display, MediaTek Dimensity 1200 processor, and 108MP dual-camera system.",
+        "image_url": "https://i02.appmifile.com/56_item_my/02/04/2024/b2b7c6f76d8a5b6a24f5557c9afc3f40.png"
+    }
+]
