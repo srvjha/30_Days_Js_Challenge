@@ -1,6 +1,5 @@
 window.onload = function () {
-    let slides = 
-        document.getElementsByClassName('carousel-item');
+    let slides = document.getElementsByClassName('carousel-item');
 
     function addActive(slide) {
         slide.classList.add('active');
@@ -27,8 +26,28 @@ window.onload = function () {
     }, 1500);
 };
 
+function renderMobileData(data) {
+    let items = document.querySelector(".product-items");
+    items.innerHTML = ''; // Clear existing content
 
-
+    data.map((item, index) => {
+        const mobileItem = document.createElement('div');
+        mobileItem.className = 'mobile-item';
+        mobileItem.innerHTML = `
+            <img src="${item.image_url}" alt="${item.name}" />
+            <h3 class="item name">${item.name}</h3>
+            <p class="item price">Rs.₹ ${item.price}</p>
+            <p class="item desc">${item.description}</p>
+            <button class="add-to-cart" data-id="${index}">Add to Cart</button>
+            <div class="quantity-controls" data-id="${index}" style="display: none;">
+                <button class="decrease-qty">-</button>
+                <span class="item-qty">1</span>
+                <button class="increase-qty">+</button>
+            </div>
+        `;
+        items.appendChild(mobileItem);
+    });
+}
 
 let mobileData = [];
 let cart = [];
@@ -38,43 +57,43 @@ function updateCartCount() {
     cartCountElement.textContent = cart.length;
 }
 
-function renderMobileData(data) {
-    let items = document.querySelector(".product-items");
-    items.innerHTML = ''; // Clear existing content
+function updateItemQuantity(itemId, change) {
+    const itemInCart = cart.find(item => item.index == itemId);
+    
+    if (itemInCart) {
+        itemInCart.quantity += change;
+        
+        if (itemInCart.quantity <= 0) {
+            cart = cart.filter(item => item.index != itemId); 
+        }
+    } else if (change > 0) {
+        const item = mobileData[itemId];
+        cart.push({...item, index: itemId, quantity: 1}); 
+    }
 
-    data.map((item,index) => {
-        const mobileItem = document.createElement('div');
-        mobileItem.className = 'mobile-item';
-        mobileItem.innerHTML = `
-             <img src="${item.image_url}" alt="${item.name}" />
-            <h3 class="item name">${item.name}</h3>
-            <p class="item price">Rs.₹ ${item.price}</p>
-            <p class="item desc">${item.description}</p>
-            <button class="add-to-cart" data-id="${index}">Add to Cart</button>
-           
-        `;
-        items.appendChild(mobileItem);
-    });
+    console.log("czart: ",cart)
+    localStorage.setItem("cart",JSON.stringify(cart))
+    
+    updateCartCount();
+    renderMobileData(mobileData); // Re-render to update quantity display
 }
 
 document.addEventListener('click', function (e) {
+    const itemId = e.target.closest('[data-id]')?.getAttribute('data-id');
+
     if (e.target.classList.contains('add-to-cart')) {
-        const itemId = e.target.getAttribute('data-id');
-        const item = mobileData.find(item => item.id === itemId);
-        
-        if (item) {
-            cart.push(item);
-            updateCartCount();
-        }
-        console.log(item)
+        updateItemQuantity(itemId, 1);
     }
 });
 
 fetch("./products.json")
-.then((response)=> response.json())
-.then((data)=>{
-    mobileData.push(...data);  // Spread operator to push all items into mobileData
-    renderMobileData(mobileData);   // This will correctly log the populated array
-  })
-.catch((error) => console.error('Error loading JSON:', error));
+    .then((response) => response.json())
+    .then((data) => {
+        mobileData.push(...data); // Spread operator to push all items into mobileData
+        renderMobileData(mobileData); // Render items
+    })
+    .catch((error) => console.error('Error loading JSON:', error));
+
+
+
 

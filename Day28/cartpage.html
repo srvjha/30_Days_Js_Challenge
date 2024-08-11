@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - MobiMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MobiMart</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products..." />
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon">
+                <img src="./images/cart-icon.png" alt="Cart" />
+                <div class="cart-count">0</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-page">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Dynamic cart items will be inserted here -->
+        </div>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-details">
+                <p>Subtotal: <span class="subtotal">₹0</span></p>
+                <p>Total: <span class="total">₹0</span></p>
+            </div>
+            <a href="./checkout.html">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            &copy; 2024 MobiMart | Saurav Jha
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

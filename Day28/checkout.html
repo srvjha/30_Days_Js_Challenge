@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MobiMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MobiMart</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products..." />
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon">
+                <img src="./images/cart-icon.png" alt="Cart" />
+                <div class="cart-count">0</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="checkout-page">
+        <h2>Checkout</h2>
+        <form class="checkout-form">
+            <div class="form-section">
+                <h3>Shipping Information</h3>
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+                <input type="text" placeholder="Postal Code" required>
+                <input type="text" placeholder="Country" required>
+            </div>
+            <div class="form-section">
+                <h3>Payment Information</h3>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Cardholder Name" required>
+                <input type="text" placeholder="Expiration Date (MM/YY)" required>
+                <input type="text" placeholder="CVV" required>
+            </div>
+            <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            &copy; 2024 MobiMart | Saurav Jha
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
