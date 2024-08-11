@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f1f1;
+}
+
+#login-app {
+    width: 500px;
+    height: 350px;
+    margin-top: 180px;
+    margin-left: 500px;
+    padding: 20px;
+    background: rgb(3,2,22);
+    background: radial-gradient(circle, rgba(3,2,22,1) 77%, rgb(3, 48, 63) 99%);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.1);
+    color: rgb(252, 252, 252);
+}
+
+#register-app {
+    width: 500px;
+    height: 500px;
+    margin-top: 160px;
+    margin-left: 500px;
+    padding: 20px;
+    background: rgb(3,2,22);
+    background: radial-gradient(circle, rgba(3,2,22,1) 77%, rgb(3, 48, 63) 99%);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.1);
+    color: rgb(252, 252, 252);
+}
+
+#login-container, #post-creation-container {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reg{
+    margin-left: 90px;
+    font-size: 20px;
+}
+
+.click-here-login ,.click-here-register{
+    cursor: pointer;
+}
+.click-here-login:hover , .click-here-register:hover{
+    color:#0056b3;
+    text-decoration: underline;
+}
+
+#posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#register-app{
+    display: none;
+}
+
+.profile-details{
+    background-color: rgb(226, 226, 229);
+    width: 240px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 1.5px 1.5px  rgb(53, 52, 52);
+    border-radius: 15px;
+    color:black
+}
+
+.profile-username{
+    background-color: blue;
+}
+
+
