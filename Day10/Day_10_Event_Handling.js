@@ -88,7 +88,7 @@ form.addEventListener("submit",(e)=>{
     let formObj = {};
     formData.forEach((value, key) => formObj[key] = value);
 
-    console.log("Form Data: ",formObj)
+    console.log("Form_Data: ",formObj)
 })
 
 // Task 8:
