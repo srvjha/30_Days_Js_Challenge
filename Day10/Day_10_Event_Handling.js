@@ -11,7 +11,7 @@ console.log(btn)
 btn.style.cursor = "pointer";
 
 let paragraph = `
-    An Indian Navy warship which was undergoing maintenance at the naval dockyard in Mumbai caught fire today. The navy said a junior sailor is missing and rescue teams are looking for him. All other personnel have been accounted for, the navy said.
+    An Indian warship which was undergoing maintenance at the naval dockyard in Mumbai caught fire today. The navy said a junior sailor is missing and rescue teams are looking for him. All other personnel have been accounted for, the navy said.
     The fire broke out on board the multirole frigate INS Brahmaputra on Sunday evening while she was undergoing refit at the Mumbai naval dockyard, the navy said, adding the ship is lying on its side.
     `   
 
